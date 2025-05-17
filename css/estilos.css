@@ -1,0 +1,300 @@
+:root {
+  --violet-primary: #2c0a4d;
+  --violet-hover:   #381362;
+  --violet-active:  #451b78;
+  --link-color:     #e0dce6;
+}
+
+/* Contenedor sidebar */
+.sidebar {
+  background-color: var(--violet-primary);
+  width: 220px;
+  min-height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  border-radius: 0 10px 10px 0;
+  transition: background-color 0.3s ease;
+  overflow: hidden;
+}
+
+/* Logo / marca */
+.sidebar-brand i {
+  color: #fff;
+}
+.sidebar-brand span {
+  color: #fff;
+}
+
+/* Links del nav */
+.sidebar .nav-link {
+  color: var(--link-color);
+  padding: 10px 16px;
+  border-radius: 8px;
+  font-weight: 500;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.sidebar .nav-link i {
+  width: 20px;
+  text-align: center;
+}
+
+/* Hover y activo */
+.sidebar .nav-link:hover {
+  background-color: var(--violet-hover);
+  color: #fff;
+}
+
+.sidebar .nav-link.active {
+  background-color: var(--violet-active);
+  color: #fff;
+}
+
+/* Pie de sidebar */
+.sidebar-footer a {
+  color: var(--link-color);
+  padding: 8px 16px;
+  border-radius: 8px;
+  display: block;
+  transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.sidebar-footer a:hover {
+  color: #fff;
+  background-color: var(--violet-hover);
+}
+
+/* Fondo general de la página */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f8f9fa; /* Fondo suave */
+}
+
+/* Barra superior */
+.navbar {
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+}
+
+.navbar .breadcrumb-item a {
+  color: #007bff;
+  font-weight: 500;
+}
+
+.navbar .breadcrumb-item.active {
+  color: #6c757d;
+}
+
+/* Efectos hover de los botones */
+.btn-light {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn-light:hover {
+  background-color: #e2e6ea;
+  color: #343a40;
+}
+
+/* Estilo de las notificaciones */
+.position-relative .badge {
+  font-size: 0.75rem;
+  padding: 0.4rem 0.6rem;
+}
+
+/* Diseño móvil */
+@media (max-width: 992px) {
+  #sidebar {
+    width: 200px;
+  }
+
+  .navbar .container-fluid {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+/* Card base */
+.stat-card {
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.stat-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 25px rgba(0,0,0,0.15);
+}
+
+/* Títulos y números */
+.stat-title {
+  font-size: 0.9rem;
+  color: #6c757d;
+  text-transform: uppercase;
+  letter-spacing: .05em;
+}
+.stat-number {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: #333;
+}
+
+/* Icono */
+.stat-icon {
+  width: 3.2rem;
+  height: 3.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* Colores suaves para fondo de iconos */
+.bg-violet-light { background-color: #2c0a4d !important; }
+.bg-success-light { background-color: rgb(40, 167, 70) !important; }
+.bg-warning-light { background-color: rgb(255, 193, 7) !important; }
+.bg-danger-light  { background-color: rgb(220, 53, 70) !important; }
+
+/* Link interno */
+.stat-link {
+  display: inline-block;
+  margin-top: .75rem;
+  font-size: .875rem;
+  color: var(--violet-dark);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.stat-link:hover {
+  color: #1f063a;
+}
+
+
+/*Gestion Clientes*/
+
+/* Ya tenés estas variables */
+:root {
+  --violet-light: rgba(44, 10, 77, 0.8);
+  --violet-dark:   #2c0a4d;
+}
+
+/* Fondo suave para ícono de empresas (info) */
+.bg-info-light {
+  background-color: rgb(13, 109, 253) !important;
+}
+
+/* Asegurate de tener también */
+.bg-violet-light { background-color: var(--violet-light) !important; }
+.bg-success-light { background-color: rgba(40,167,69,0.2) !important; }
+
+.btn-violet {
+  background-color: var(--violet-dark);
+  color: white;
+  border: none;
+  transition: 0.3s ease;
+}
+.btn-violet:hover {
+  background-color: var(--violet-light);
+}
+
+.stat-card {
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  border: none;
+  transition: all 0.3s ease;
+}
+.stat-card:hover {
+  transform: translateY(-3px);
+}
+
+.stat-title {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  color: #6c757d;
+  letter-spacing: 0.05em;
+}
+
+.stat-number {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: #333;
+}
+
+.stat-icon {
+  width: 3.2rem;
+  height: 3.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bg-success-light {
+  background-color: rgb(4, 121, 0) !important;
+}
+
+.stat-link {
+  font-size: 0.9rem;
+  color: var(--violet-dark);
+  text-decoration: none;
+  font-weight: 500;
+}
+.stat-link:hover {
+  color: var(--violet-light);
+}
+
+/* Botón principal */
+.btn-violet {
+  background-color: #2c0a4d;
+  color: white;
+  font-weight: 500;
+  transition: 0.3s ease;
+}
+
+.btn-violet:hover {
+  background-color: #4a2272;
+}
+
+/* Encabezado tabla violeta */
+.table-violet {
+  background-color: #2c0a4d;
+}
+
+/* Modal header */
+.modal-header.bg-violet {
+  background-color: #2c0a4d;
+  color: white;
+}
+
+
+/* Equipos */
+
+
+/* Tabla de equipos */
+.table-violet {
+  background-color: var(--violet-dark);
+}
+
+/* Badges de estado */
+.badge-warning-light {
+  background-color: rgba(255,193,7,0.2);
+  color: #ffc107;
+}
+.badge-success-light {
+  background-color: rgba(40,167,69,0.2);
+  color: #28a745;
+}
+
+/* Iconos de cards */
+.bg-violet-light { background-color: var(--violet-light) !important; }
+.bg-warning-light { background-color: rgba(255, 193, 7, 0.664) !important; }
+.bg-success-light { background-color: rgba(40, 167, 70, 0.658) !important; }
+
+/* Reutilizar botones violeta */
+.btn-violet {
+  background-color: var(--violet-dark);
+  color: white;
+  transition: background-color 0.3s ease;
+}
+.btn-violet:hover {
+  background-color: #4a2272;
+}
